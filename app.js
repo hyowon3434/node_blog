@@ -7,7 +7,7 @@ const port = process.env.PORT || 3000
 
 app.use(expressLayouts)
 app.set('view engine', 'ejs')
-app.set('view', './views')
+app.set('views', './views')
 
 app.use('/', require('./routes/main'))
 
